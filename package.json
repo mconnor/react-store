@@ -2,6 +2,8 @@
   "name": "cotd",
   "version": "0.0.1",
   "private": true,
+  "homepage": "http://rocketnumber9.org/react/catchoftheday/",
+  "description": "tutorial by Wesbos",
   "repository" : {
     "type" : "git",
      "url" : "https://github.com/mconnor/catch-of-the-day-03-08.git"

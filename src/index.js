@@ -11,7 +11,7 @@ import App from './components/App';
 
 const Root = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={'/react/catchoftheday'}>
       <div>
         <Match exactly pattern="/" component={StorePicker} />
         <Match pattern="/store/:storeId" component={App} />
