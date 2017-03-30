@@ -8,7 +8,8 @@ import StorePicker from './components/StorePicker';
 import NotFound from './components/NotFound';
 import App from './components/App';
 
-const repo = `${window.location.pathname.split('/')[1]}`;
+const repo = `${window.location.pathname.split('/')[1]}`.toString();
+
 const Root = () => {
   return (
     <BrowserRouter basename={repo}>
