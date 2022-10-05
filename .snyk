@@ -1,0 +1,11 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:moment:20170905':
+    - re-base > firebase > jsonwebtoken > joi > moment:
+        patched: '2022-10-05T19:39:45.249Z'
+  'npm:ms:20170412':
+    - re-base > firebase > jsonwebtoken > ms:
+        patched: '2022-10-05T19:39:45.249Z'
