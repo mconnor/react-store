@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "http://mconnor.github.io/catch-of-the-day-03-08/",
   "description": "tutorial by Wesbos",
-  "repository" : {
-    "type" : "git",
-     "url" : "https://github.com/mconnor/catch-of-the-day-03-08.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mconnor/catch-of-the-day-03-08.git"
   },
   "devDependencies": {
     "autoprefixer-stylus": "0.10.0",
@@ -21,11 +21,12 @@
   },
   "dependencies": {
     "history": "4.2.0",
-    "re-base": "2.2.0",
-    "react": "15.4.0",
+    "re-base": "3.0.0",
+    "react": "16.5.0",
     "react-addons-css-transition-group": "15.3.2",
-    "react-dom": "15.4.0",
-    "react-router": "4.0.0-alpha.4"
+    "react-dom": "16.5.0",
+    "react-router": "4.0.0-alpha.4",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,9 +35,12 @@
     "eject": "react-scripts eject",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
     "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css",
-    "deploy": "ns ./build --cmd 'list ./content -s'"
+    "deploy": "ns ./build --cmd 'list ./content -s'",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/.eslintrc"
-  }
+  },
+  "snyk": true
 }
